@@ -10,10 +10,3 @@ class Player:
                 next_room.print_room_description(self)
         else:
             print("You cannot move in that direction.")
-
-    def canTravel(self, direction):
-        nextRoom = self.currentRoom.getRoomInDirection(direction)
-        if nextRoom is not None:
-            return True
-        else:
-            return False
